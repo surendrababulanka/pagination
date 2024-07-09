@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+.item .img img{
+    width: 100%;
+    height: 150px;
+}
+.item .img img:hover{
+    transform: rotateY(-50px);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    border-radius: 8px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.item{
+    background-color: rgb(162, 162, 57);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.content h3{
+    font-size: 22px;
+    text-align: center;
+    margin: 5px 0;
+}
+.content p{
+    font-size: 16px;
+}
+.content .price{
+    margin-top: 15px;
+    display: block;
+}
+.content span{
+    color: red;
+    font-size: 22px;
+}
+button{
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: lightblue;
+    margin: 5px 0;
+}
+.listpage{
+    list-style: none;
+    text-align: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.listpage li{
+    background-color: #9c898956;
+    display: inline;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+.listpage .active{
+    background-color: #9c8989ef;
+}
